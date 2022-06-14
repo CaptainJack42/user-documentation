@@ -67,18 +67,43 @@ Most JabRef installations include the necessary files, so test the extension bef
    * `/usr/lib/mozilla/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.mozilla/native-messaging-hosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     b. Chrome: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   b. Chrome: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/opt/chrome/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/google-chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     c. Chromium: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   c. Chromium: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/chromium/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     d. Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   d. Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
+   * `/etc/opt/edge/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `~/.config/microsoft-edge/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+
+#### AUR
+
+1. Install the [JabRef](https://aur.archlinux.org/packages/jabref) (Alternatively [JabRef-latest](https://aur.archlinux.org/packages/jabref-latest) or [Jabref-git](https://aur.archlinux.org/packages/jabref-git)) from the AUR.
+2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
+
+   a. Firefox: Copy the file `/opt/JabRef/lib/native-messaging-host/firefox/org.jabref.jabref.json` (alternatively download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/firefox/org.jabref.jabref.json) and adjust the line `"path": "/opt/jabref/lib/jabrefHost.py"` to `"path": "/opt/JabRef/lib/jabrefHost.py"` **(Case sensitive!)**) to
+  
+   * `/usr/lib/mozilla/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `~/.mozilla/native-messaging-hosts/org.jabref.jabref.json` to install without admin rights for the current user
+
+   b. Chrome: Copy the file `/opt/JabRef/lib/native-messaging-host/chromium/org.jabref.jabref.json` (alternatively download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and adjust the line `"path": "/opt/jabref/lib/jabrefHost.py"` to `"path": "/opt/JabRef/lib/jabrefHost.py"` **(Case sensitive!)**) to
+  
+   * `/etc/opt/chrome/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `~/.config/google-chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+   
+   c. Chromium: Copy the file `/opt/JabRef/lib/native-messaging-host/chromium/org.jabref.jabref.json` (alternatively download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and adjust the line `"path": "/opt/jabref/lib/jabrefHost.py"` to `"path": "/opt/JabRef/lib/jabrefHost.py"` **(Case sensitive!)**) to
+  
+   * `/etc/chromium/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `~/.config/chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+
+   d. Edge: Copy the file `/opt/JabRef/lib/native-messaging-host/chromium/org.jabref.jabref.json` (alternatively download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and adjust the line `"path": "/opt/jabref/lib/jabrefHost.py"` to `"path": "/opt/JabRef/lib/jabrefHost.py"` **(Case sensitive!)**) to
+  
    * `/etc/opt/edge/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/microsoft-edge/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
